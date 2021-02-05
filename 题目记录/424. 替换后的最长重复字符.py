@@ -7,7 +7,6 @@ class Solution:
         cnt = [0] * 26
         cnt[ord(s[0])-ord("A")] = 1
         max_letter = s[0]
-        diff_cnt = 0
         while True:
             right += 1
             cnt[ord(s[right])-ord("A")] += 1
