@@ -3,18 +3,8 @@ class Solution:
         if n == 0 or k == 0:
             return []
         ans = []
-        def check(num_list):
-            hash_map = {}
-            for i in num_list:
-                if hash_map.get(i):
-                    return False
-                else:
-                    hash_map[i] = 1
-            return True
-
+        
         def back(num_list):
-            if not check(num_list):
-                return
             if len(num_list) == k:
                 ans.append(num_list)
                 return
